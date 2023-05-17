@@ -1,0 +1,29 @@
+body{
+    background-color: blue;
+}
+.sec1{
+    background-color: blanchedalmond;
+    color:deeppink;
+    grid-column: 1/2;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 100px;
+    
+}
+header{
+    background-color: black;
+    grid-column: 2/5;
+    color:aliceblue;
+}
+p{
+    background-color: aquamarine;
+    color: aliceblue;
+    grid-column: 2/4;
+}
+footer{
+    background-color: brown;
+    color: aliceblue;
+    grid-column: 1/5;
+}
