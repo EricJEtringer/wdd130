@@ -21,7 +21,7 @@ main section img{
     box-sizing: border-box;
 }
 #background{
-    height: 725;
+    height: 725px;
     background-color: bisque;
 }
 body{
