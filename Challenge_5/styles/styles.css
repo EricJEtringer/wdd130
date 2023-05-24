@@ -1,32 +1,23 @@
 main{
     display: grid;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: auto;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #clircles{
-    grid-column: 2/4;
+
+    width: 100%;
+    grid-column: 1/4;
 
 }
 #desk{
-    margin: 0;
-    padding: 0;
-    border: 0;
     grid-column: 1/2;
 
 }
 #graphic{
-    margin: 0;
-    padding: 0;
-    border: 0;
     grid-column: 2/3;
 
 }
 #person{
-    margin: 0;
-    padding: 0;
-    border: 0;
     grid-column: 3/4;
 
 }
