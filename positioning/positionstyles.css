@@ -17,15 +17,14 @@
   width: 250px; 
   height: 250px; 
   background-color: green;
-  grid-column: 1/2 2/3; 
+  justify-items: center; 
   margin: 50px;
-
 } 
 .yellow1 {
   width: 250px; 
   height: 250px; 
   background-color: gold; 
-  grid-column: 1/2 2/3;
+  justify-items: center;
   margin-bottom: 50px;
 } 
 .blue1 {
