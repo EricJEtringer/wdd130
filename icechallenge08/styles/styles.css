@@ -1,0 +1,23 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+img{
+    grid-column: 1/2;
+    width: 100%;
+}
+#top{
+    font-weight: bold;
+}
+#nexttop{
+
+   
+}
+#input1{
+    
+}
+#input2{
+   
+}
+#box{
+}
