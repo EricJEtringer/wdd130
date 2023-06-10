@@ -176,3 +176,23 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+.tokyou{
+  width: 50%;
+  justify-items: center;
+}
+.writing{
+  width: 50%;
+  justify-items: center;
+}
+.goodmorning{
+  width: 50%;
+  justify-items: center;
+}
+.wish{
+  width: 50%;
+  justify-items: center;
+}
+.kanjiname{
+  width: 50%;
+  justify-items: center;
+}
