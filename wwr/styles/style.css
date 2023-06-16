@@ -26,6 +26,7 @@ padding: 35px;
     grid-row: 1/2;
     margin-top: 100px;
 }
+
 #hero-msg h1, #hero-msg h4{
 text-align: center;
 }
@@ -66,21 +67,22 @@ nav{
     align-self: center;
 }
 nav a:hover{
-background-color: lightsalmon;
-color:moccasin;
+background-color: #BFDBF7;
+color: black;
 }
 .book, .join{
-background-color: darkred;
+background-color: rgb(196, 238, 7);
 color:black;
 text-decoration: none;
 font-size: 18px;
 padding: 15px 30px;
 margin-top: 50px;
 border-radius: 5px;
+text-shadow: 2px 2px rgb(146, 138, 138);
 }
 .book:hover, .join:hover{
 background-color: lightsalmon;
-color:tomato;
+color:white;
 }
 .msg{
 background-color: cadetblue;
@@ -88,8 +90,10 @@ line-height: 1.5em;
 padding: 35px;
 }
 .msg h2{
+padding-top: 15px;
 color: black;
 font-family: 'Courier New', Courier, monospace
+
 }
 .msg p{
 color: black;
@@ -106,48 +110,64 @@ justify-content: space-around;
 align-items: center;
 }
 .home-title{
-    color:black;
+    color:white;
     font-size: 2em;
     margin-top: 10px;
+    padding-top: 50px;
+    text-shadow: 4px 4px grey;
+    margin-bottom: 10px;
+
 }
 h4{
     color:black;
+    
 }
 footer a{
 color:black;
 text-decoration: none;
 }
+
 footer a:hover{
 color:black;
 }
+
 footer .social img{
     padding-top: 15px;
 }
+
 .logo{
     width: 80px;
 }
+
 .icon{
     width: 80px;
     padding-top: 10px;
 }
+
 #hero-img{
     width: 100%;
 }
+
 footer p{
     font-size: 1.2em;
 }
+
 footer p:hover{
     text-decoration: underline;
 }
+
 h2{
     margin: 0;
 }
+
 #logo_link{
     padding-top: 5px;
 }
+
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
 }
+
 .card-img{
     border: 10px solid black;
 }
@@ -234,4 +254,110 @@ h2{
     footer {
         margin-top: 25px;
     }
+}
+/* Page 2 Rivers */
+
+#first{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+}
+
+#idahoriver{
+    width: 85%;
+    grid-column: 1/2
+
+}
+
+#titleone{
+    justify-self: center;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 100%;
+    color: white;
+
+}
+
+#boxone{
+    background-color: rgb(202, 35, 35);
+    grid-column: 2/4;
+    grid-row: 1/2;
+    z-index: -1;
+    height: 60px;
+    
+}
+
+#paragraphone{
+    line-height: 35px;
+    grid-column: 2/4;
+    padding: 0;
+    margin-top: -255px;
+}
+
+#second{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+}
+
+#utahriver{
+    width: 85%;
+    grid-column: 1/2;
+}
+
+#titletwo{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 100%;
+    justify-self: center;
+    color: white;
+}
+
+#boxtwo{
+    background-color:  rgb(202, 35, 35);
+    grid-column: 2/4;
+    grid-row: 1/2;
+    z-index: -1;
+    height: 60px;
+}
+
+#paragraphtwo{
+    line-height: 35px;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin-top: -255px
+}
+
+#third{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px
+}
+
+#grandcanyon{
+    grid-column: 1/2;
+    width: 85%;
+}
+
+#titlethird{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    color: white;
+    justify-self: center;
+    font-size: 100%;
+}
+
+#boxthird{
+    grid-column: 2/4;
+    grid-row: 1/4;
+    background-color:  rgb(202, 35, 35);
+    z-index: -1;
+    height: 60px;
+}
+
+#pthird{
+    line-height: 35px;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin-top: -255px
 }
