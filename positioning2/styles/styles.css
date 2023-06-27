@@ -1,0 +1,52 @@
+p:nth-of-type(2){
+    text-align: center;
+}
+
+p:nth-of-type(3){
+    text-align: right;
+}
+
+section{
+    width: 100%;
+    border: 5px solid;
+}
+
+#section1{
+    width: 25%;
+    padding: 5px;
+}
+
+#section2{
+    width: 25%;
+    display: block;
+    margin-left: 27em;
+    margin-top: 25px;
+    padding: 5px;
+
+}
+
+#section3{
+    width: 25%;
+    display: block;
+    margin-left: 54em;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+#section4{
+    width: 40%;
+    display: block;
+    margin-left: 500px;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+#rightboy{
+    text-align: right;
+}
+#centerboy{
+    text-align: center;
+}
+#leftboy{
+    text-align: left;
+}
