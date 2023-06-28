@@ -1,0 +1,35 @@
+body{
+    background-color: chartreuse;
+}
+h1{
+    border-bottom: 2px solid;
+    grid-column: 2/4;
+    padding-left: 60px;
+
+}
+h2{
+ padding-left: 60px;
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-right: 0 auto;
+    margin-left: 500px;
+    margin-top: 150px;
+
+}
+#gecko{
+    width: 400px;
+    height: 470px;
+    float: left;
+}
+p{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 70px;
+}
+#pls{
+    display: block;
+    background-color: aliceblue;
+    height: 470px;
+}
