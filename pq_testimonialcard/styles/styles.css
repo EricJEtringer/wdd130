@@ -1,35 +1,51 @@
 body{
     background-color: chartreuse;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 800px;
 }
-h1{
-    border-bottom: 2px solid;
-    grid-column: 2/4;
-    padding-left: 60px;
 
-}
-h2{
- padding-left: 60px;
-}
 #main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-right: 0 auto;
-    margin-left: 500px;
-    margin-top: 150px;
+    width: 940px;
+    grid-template-columns: 1fr 1fr;
+}
 
-}
 #gecko{
-    width: 400px;
     height: 470px;
-    float: left;
+    width: 400px;
 }
-p{
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 70px;
-}
+
 #pls{
     display: block;
+    width: 540px;
     background-color: aliceblue;
-    height: 470px;
+    padding-top: 70px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+h1{
+    border-bottom: 5px solid;
+}
+#box{
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.boxes{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    margin: 5px;
+  
+}
+#fun{
+    width: 100%;
+    text-align: right;
+    font-size: 100px;
+    margin: 0;
 }
