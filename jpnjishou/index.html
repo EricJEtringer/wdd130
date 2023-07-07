@@ -4,40 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles/site-plan.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div id="jpncontent">
         <header>
-            <a id="logo_link" href="index.html">
-                <img id="risingsun" src="images/jpn_flag.png" alt="flag">
-            </a>
             <nav>
-                <a id="jpnjishoumoji" href="index.html">日本語の辞書</a>
-                <a href="index.html">Home</a>
-                <a href="">Page 2</a>
-                <a href="">Page 3</a>
+                <a id="jpnwords" href="index.html"><div>日本語の辞書</div></a>
+                <a class="menuclick" href="index.html"><div>Home</div></a>
+                <a class="menuclick" href=""><div>Page2</div></a>
+                <a class="menuclick" href=""><div>Page3</div></a>
+                <a id="logo_link" href="index.html">
+                    <img id="risingsun" src="images/jpn_flag.png" alt="flag">
+                </a>
             </nav>
         </header>
         <main>
-            <div id="tokyou">
-                <img src="images/tokyouorsomething.jpg" alt="tabuntokyou">
+            <div id="pic1">
+                <img id="tokyou" src="images/tokyou_banner.PNG" alt="tabuntokyou">
             </div>
-            <h1>日本語 | Japanese</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eaque ab doloremque perspiciatis, porro eveniet libero nostrum enim velit impedit ipsa quis nulla numquam illum eum odio reiciendis soluta unde.</p>
-            <div id="kanjiwriter">
-                <img src="images/dudewritingkanji.jpg" alt="writer">
+            <h1 id="title1">日本語 | Japanese</h1>
+            <div id="about">
+                <p id="jpndescription">Japanese is the 9th most spoken language in the world. It has around 125 million native speakers, most of which are in located in Japan. For English speakers, Japanese is rated as a very difficult language to learn due to its various differences and its complex differences from English.
+                    Japanese does not have difficult pronounciation, but there is pitch accent, which can be picked up while learning. There is also the Japanese "R" sound, which English speakers tend to have trouble with.
+                    The Japanese language contains 3 alphabets: hiragana, katakana, and kanji. Hiragana is the phonetic alaphabet, making the base for all Japanese words. It contains 46 characters with some modifers that affect the sounds. Katakana is used for loan words, slang, onomatopoeias, foreign names, and stylistic choices. This alphabet also contains 46 characters.
+                    All of them are pronounced the same as hiragana characters including the modifiers. However, almost all of the characters are written differently. The final alphabet is kanji. Kanji were borrowed from China. There are about 2132 required kanji to learn to understand Japanese.
+                    Japanese has different grammar from English. English follows a subject, verb, object pattern. Japanese on the other hand, switches things a little bit. The word order in Japanese follows a subject, object, verb pattern. The verbs always come at the end of the sentence.
+                    Verb conjugation are another large aspect that makes up Japanese. Unlinke Spanish, Japanese has a lot more complex conjugation patterns. Some examples are: past formal tense, past informal tense, passive form, causative form, conditional form, and compund verbs. 
+                    Japanese also lacks words that English contains like "a" and "the." Japanese makes up for this be use of particles. One of the most important particles is "Wa." This particle is placed after a subject to indicate it is the main subject of the sentence. Another example is the particle "Ni." This particle indicates the location/setting in a sentence or a direction that action is being pointed toward.
+                    Another aspect of Japanese, is honorifics. You have probably heard examples of this while watching anime such as san, chan, kun, or senpai. These honorifics are a large part of Japanese culture and the language. Honorifics help indicate politness and statuses of people's relationships and positions in a work environment.
+                    All of these differences might seem overbearing, but they are possible to learn and master with hard work and effort.
+                </p>
+                <div id="pic2">
+                    <img id="kanjiwriter" src="images/dudewritingkanji.jpg" alt="writer">
+                </div>
             </div>
+            <!-- <div id="container">
+                <div class="mySlides">
+                    <div class="slide#">1/3</div>
+                    <img src="images/dudewritingkanji.jpg" styles="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="slide#">2/3</div>
+                    <img src="images/kanjiwishcard.jpg" alt="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="slide#">3/3</div>
+                    <img src="images/kanji.jpg" alt="width:100%">
+                </div>
+
+                <a href="prev" onclick="plusSlides(-1)">&#100094;</a>
+                <a href="next" onclick="plusSlides(1)">&#100095;</a>
+
+                <div id="rows">
+                    <div class="column">
+                        <img class="democursor" src="images/dudewritingkanji.jpg" styles="width:100%" onclick="">
+                    </div>
+                    <div class="column">
+                        <img class="democursor" src="images/kanjiwishcard.jpg" alt="wishcard">
+                    </div>
+                    <div class="column">
+                        <img class="democursor" src="images/kanji.jpg" alt="Kanji Name">
+                    </div>    
+                </div> -->
         </main>
         <footer>
-            <p>JPN GOV &copy; 2023 - Eric Etringer</p>
-            <p>
-                <a href="site-plan.html">Site Plan</a>
-            </p>
-            <p>
-                <a href="index.html">Home</a>
-            </p>
-            <div>
+            <div id="copyright">
+                <p>JPN GOV &copy; 2023 - Eric Etringer</p>
+                <p>
+                    <a class="footerlink" href="site-plan.html">Site Plan</a>
+                </p>
+                <p>
+                    <a class="footerlink" href="index.html">Home</a>
+                </p>
+            </div>
+            <div id="socialmedia">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
                 </a>

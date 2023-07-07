@@ -1,0 +1,167 @@
+/* :):):):):):):):) */
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Serif+JP:wght@300&display=swap');
+
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #00a5e0   ;
+    --secondary-color: #DCABB4 ;
+    --accent1-color: #353b3c;
+    --accent2-color: #ff595e;
+    --plain-color: #ffffff;
+  
+  
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Noto Serif JP', 'serif', 'Garamond', 'Georgia';
+    --paragraph-font: 'Carter One', 'cursive' 'Times New Roman', 'Courier New';
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #353b3c;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #353b3c; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #DCABB4  ;
+    --nav-link-color: #00a5e0;
+    --nav-background-color: #353b3c;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #ff595e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DCABB4;
+
+}
+
+nav{
+    background-color: #ff595e;
+    border-bottom: #353b3c 5px solid;
+    font-family: "Carter One";
+    font-size: 50px;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    
+}
+a{
+    display: inline-block;
+}
+#jpnwords{
+    font-family: "Noto Serif JP";
+    color: white;
+    text-shadow: 2px 2px #DCABB4;
+    height: 100px;
+    padding: 5px;
+}
+.menuclick{
+    color: white;
+    text-shadow: 2px 2px #DCABB4;
+    height: 100px;
+    padding: 5px;
+   
+}
+.menuclick:hover, #jpnwords:hover, .footerlink:hover{
+    background-color: #00a5e0;
+    color: #353b3c;
+    text-shadow: 2px 2px white;
+}
+#logo_link{
+    width: 10%;
+    height: 100px;
+    padding-right: 10px
+}
+
+#risingsun{
+    width: 100%;
+    height: 100%;
+}
+
+#pic1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    justify-content: center;
+}
+#tokyou{
+    border: 5px #353b3c solid;
+    border-radius: 10px;
+}
+
+
+#title1{
+    text-align: center;
+    margin-left: 210px;
+    margin-right: 209px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding: 50px;
+    background-color: #00a5e0;
+    color: #ffffff;
+    box-shadow: 5px 5px #353b3c;
+    border-radius: 10px;
+    font-family: "Noto Serif JP";
+
+}
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-bottom: 100px
+}
+#jpndescription{
+    grid-column: 1;
+    background-color: #ff595e;
+    color:#ffffff;
+    font-family: "Carter One";
+    padding: 30px;
+    border: 5px #353b3c solid;
+    border-radius: 10px;
+    margin-left: 210px;
+}
+#pic2{
+    grid-column: 2;
+    width: 78%;
+    height: 700px;
+    margin-right: 209px;
+}
+#kanjiwriter{
+    width: 100%;
+    height: 100%;
+    border: 5px #353b3c solid;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #353b3c;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+
+}
+.footerlink{
+    color:#ffffff
+}
+#socialmedia{
+    border: 7px #ffffff solid;
+    
+}
+#copyright p{
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
