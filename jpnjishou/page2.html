@@ -4,83 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
-    <link rel="stylesheet" href="styles/site-plan.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div id="jpncontent">
         <header>
-            <a id="logo_link" href="index.html">
-                <img id="risingsun" src="images/jpn_flag.png" alt="flag">
-            </a>
             <nav>
-                <a id="jpnjishoumoji" href="index.html">日本語の辞書</a>
-                <a href="index.html">Home</a>
-                <a href="">Page 2</a>
-                <a href="">Page 3</a>
+                <a id="jpnwords" href="index.html"><div>日本語の辞書</div></a>
+                <a class="menuclick" href="index.html"><div>Home</div></a>
+                <a class="menuclick" href="page2.html"><div>Page2</div></a>
+                <a class="menuclick" href="page3.html"><div>Page3</div></a>
+                <a id="logo_link" href="index.html">
+                    <img id="risingsun" src="images/jpn_flag.png" alt="flag">
+                </a>
             </nav>
         </header>
         <main>
-            <h1>Hiragana Alphabet</h1>
-            <p>
-                The Japanese hiragana alphabet is the phonetic alphabet for Japanese. It contains all the sounds that are present in Japanese. There are a total of 46 characters with a few rules that modify some of the sounds. However, this page will contain the basic sounds found in Japanese
-                Hiragana characters will appear alongside the other two Japanese alphabets, katakana and kanji. Hiragana characters also make up the backbone of kanji sounds. If you don't know how to write a specific kanji, you can write that kanji in hiragan characters.
-            </p>
-            <h2>Hiragana Characters</h2>
-            <div id="'moji">
-                <img src="images/hiragana.png" alt="characters">
+            <div id="kanaintro">
+                <h1 id="kanatitle">The Hiragana Alphabet</h1>
+                <p>
+                    The Japanese hiragana alphabet is the phonetic alphabet for Japanese. It contains all the sounds that are present in Japanese. There are a total of 46 characters with a few rules that modify some of the sounds. However, this page will contain the basic sounds found in Japanese
+                    Hiragana characters will appear alongside the other two Japanese alphabets, katakana and kanji. Hiragana characters also make up the backbone of kanji sounds. If you don't know how to write a specific kanji, you can write that kanji in hiragan characters.
+                </p>
             </div>
-            <p>
-                あ, "A" い, "I" う, "U" え, "E" お, "O"
-                か, "KA" き, "KI" く, "KU" け, "KE" こ, "KO"
-                さ, "SA" し, "SHI" す, "SU" せ, "SE" そ, "SO"
-                た, "TA" ち, "CHI" つ, "TSU" て, "TE" と, "TO"
-                な, "NA" に, "NI" ぬ, "NU" ね, "NE" の, "NO"
-                は, "HA" ひ, "HI" ふ, "FU" へ, "HE" ほ, "HO"
-                ま, "MA" み, "MI" む, "MU" め, "ME" も, "MO"
-                や, "YA" ゆ, "YU" よ, "YO"
-                ら, "RA" り, "RI" る, "RU" れ, "RE" ろ, "RO"
-                わ, "WA" を, "WO"
-                ん, "N"
-            </p>
-            <h2>Pronunciation Guide</h2>
-            <p>
-                Japanese is a fairly easy language to pronounce. However, there are a few caveats.
-                The vowels of Japanese are pronounced the same as all other characters. The "A" sound is pronounced as the A in "law."
-                The "I" is pronuced like the EE's in "see."
-                The "U" is prnounced as the OU in "you."
-                The "E" is pronunced as the E in "set."
-                The "O" is pronounced as the O in "yo."
-                Japanese consonants are pronounced the same as English consonants. Though, there is one exception, which is the Japanese "R" sound.
-                In Japanese, the "R" sound is pronounced by placing the tip of the tongue behind the front teeth, curving the tongue, and pronouncing the R. It will sound kind of like a D, but there is a noticable difference.
-                The last exception is the character を, "WO." It is pronunced exactly like the other Japanese "O" sound. The "W" is silent.
-
-            </p>
-            <h2>Hiragana Word Examples</h2>
-            <div id="morning">
-                <img src="images/gutentag.jpg" alt="hello">
+            <div id="kanamain">
+                <div id="kanaleft">
+                    <h2 id="hiragana_characters">Hiragana Characters</h2>
+                    <div id="kanaalpha">
+                        <div id="'moji">
+                            <img id="customhiragana" src="images/hiragana.png" alt="characters">
+                        </div>
+                        <div id="chart">
+                            <p>A  I   U   E  O</p>
+                            <p>KA KI  KU  KE KO</p>
+                            <p>SA SHI SU  SE SO</p>
+                            <p>TA CHI TSU TE TO</p>
+                            <p>NA NI  NU  NE NO</p>
+                            <p>HA HI  FU  HE HO</p>
+                            <p>MA MI  MU  ME MO</p>
+                            <p>YA     YU     YO</p>
+                            <p>WA            WO</p>
+                            <p>       N</p>
+                        </div>
+                    </div>
+                </div>        
+                <div id="kanaright">
+                    <h2 id="exptitle">Hiragana Word Examples</h2>
+                    <div id="jpnexamples">
+                        <div id="jpnwithtrans">
+                            <p><span>こんにちは</span>,</p>
+                            <p>"Konnichiwa, Hello/Good day"</p>
+                            <p><span>おはよう</span>,</p>
+                            <p>"Ohayou, Good morning"</p>
+                            <p><span>こんばんは</span>,</p>
+                            <p>"Konbanwa, Good evening"</p>
+                            <p><span>じゃまた</span>,</p>
+                            <p>"Jamata, see you later" </p>
+                            <p><span>です</span></p>
+                            <p>"Desu, Is/am/are (the U is silent)"</p>
+                            <p><span>か</span>,</p>
+                            <p>"Ka, this is a question particle"</p>
+                            <p><span>わたし</span>,</p>
+                            <p>"Watashi, I"</p>
+                            <p><span>なまえは</span>,</p>
+                            <p>"Namaewa, name"</p>
+                            <p><span>なに</span>,</p>
+                            <p>"Nani, what"</p>
+                            <p><span>げんき</span>,</p>
+                            <p>"Genki, doing well/good"</p>
+                            <p><span>どこ</span>,</p>
+                            <p>"Doko, where"</p>
+                            <p><span>さん</span>,</p>
+                            <p>"San, formal honorific used at the end of someones name"</p>
+                            <p><span>これ</span>,</p>
+                            <p>"Kore, this"</p>
+                        </div>
+                        <div id="morning">
+                            <img id="hellojpn" src="images/gutentag.jpg" alt="hello">
+                        </div>
+                    </div>
+                </div> 
+                <div id="kanabottomleft">
+                    <h2 id="ugh">Pronunciation Guide</h2>
+                        <p id="guide">
+                            Japanese is a fairly easy language to pronounce. However, there are a few caveats.
+                            The vowels of Japanese are pronounced the same as all other characters. The "A" sound is pronounced as the A in "law."
+                            The "I" is pronuced like the EE's in "see."
+                            The "U" is prnounced as the OU in "you."
+                            The "E" is pronunced as the E in "set."
+                            The "O" is pronounced as the O in "yo."
+                            Japanese consonants are pronounced the same as English consonants. Though, there is one exception, which is the Japanese "R" sound.
+                            In Japanese, the "R" sound is pronounced by placing the tip of the tongue behind the front teeth, curving the tongue, and pronouncing the R. It will sound kind of like a D, but there is a noticable difference.
+                            The last exception is the character <span>を</span>, "WO." It is pronunced exactly like the other Japanese "O" sound. The "W" is silent.
+                        </p>
+                </div>
+                <div id="kanabottomright">    
+                    <h2 id="sentences">Sentence Examples</h2>
+                    <div id="wordstuff">
+                        <p><span>おなまえはなんですか。</span></p>
+                        <p>"Onamaewa nan desu ka? What is your name?"</p>
+                        <p><span>わたしはJimです。</span></p>
+                        <p>"Watashiwa Jim desu. I am Jim/My name is Jim."</p>
+                        <p><span>げんきですか。</span></p>
+                        <p>"Genki desu ka? How are you doing?"</p>
+                        <p><span>けんきです。</span></p>
+                        <p>"Genki desu. I am doing good."</p>
+                        <p><span>これはなんですか。</span></p>
+                        <p>"Korewa nan desu ka? What is this?"</p>
+                        <p><span>どこですか。</span></p>
+                        <p>"Doko desu ka? Where is it?"</p>
+                    </div>
+                </div>   
             </div>
-            <p>
-                こんにちは, "Konnichiwa, Hello/Good day" おはよう, "Ohayou, Good morning" こんばん, ""はじゃまた
-                わたしなまえはなにげんきどこさんこれ
-            </p>
-            <h2>Sentences</h2>
-            <p>
-                おなまえはなんですか。
-                わたしはです。
-                げんきです。
-                これはなんですか。
-                どこですか。
-            </p>
         </main>
         <footer>
-            <p>JPN GOV &copy; 2023 - Eric Etringer</p>
-            <p>
-                <a href="site-plan.html">Site Plan</a>
-            </p>
-            <p>
-                <a href="index.html">Home</a>
-            </p>
-            <div>
+            <div id="copyright">
+                <p>JPN GOV &copy; 2023 - Eric Etringer</p>
+                <p>
+                    <a class="footerlink" href="site-plan.html">Site Plan</a>
+                </p>
+                <p>
+                    <a class="footerlink" href="index.html">Home</a>
+                </p>
+            </div>
+            <div id="socialmedia">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
                 </a>
