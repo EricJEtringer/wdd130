@@ -20,10 +20,74 @@
             </nav>
         </header>
         <main>
-            <div id="pic1">
-                <img id="tokyou" src="images/tokyou_banner.PNG" alt="tabuntokyou">
-            </div>
             <h1 id="title1">日本語 | Japanese</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img class="slidepictures" src="images/tokyou_banner.PNG" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img class="slidepictures" src="images/hiragana_basic.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img class="slidepictures" src="images/food_shop.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img class="slidepictures" src="images/katakana_table.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="slidepictures" src="images/morekanji_writing.jpg" style="width:100%">
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <br>
+                <div id="dotboys" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
+            <br>   
+            <br>
+            <br>
+            <br>
+            <br>
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+            <!-- <h1 id="title1">日本語 | Japanese</h1> -->
             <div id="about">
                 <p id="jpndescription">Japanese is the 9th most spoken language in the world. It has around 125 million native speakers, most of which are in located in Japan. For English speakers, Japanese is rated as a very difficult language to learn due to its various differences and its complex differences from English.
                     Japanese does not have difficult pronounciation, but there is pitch accent, which can be picked up while learning. There is also the Japanese "R" sound, which English speakers tend to have trouble with.
@@ -39,34 +103,6 @@
                     <img id="kanjiwriter" src="images/dudewritingkanji.jpg" alt="writer">
                 </div>
             </div>
-            <!-- <div id="container">
-                <div class="mySlides">
-                    <div class="slide#">1/3</div>
-                    <img src="images/dudewritingkanji.jpg" styles="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="slide#">2/3</div>
-                    <img src="images/kanjiwishcard.jpg" alt="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="slide#">3/3</div>
-                    <img src="images/kanji.jpg" alt="width:100%">
-                </div>
-
-                <a href="prev" onclick="plusSlides(-1)">&#100094;</a>
-                <a href="next" onclick="plusSlides(1)">&#100095;</a>
-
-                <div id="rows">
-                    <div class="column">
-                        <img class="democursor" src="images/dudewritingkanji.jpg" styles="width:100%" onclick="">
-                    </div>
-                    <div class="column">
-                        <img class="democursor" src="images/kanjiwishcard.jpg" alt="wishcard">
-                    </div>
-                    <div class="column">
-                        <img class="democursor" src="images/kanji.jpg" alt="Kanji Name">
-                    </div>    
-                </div> -->
         </main>
         <footer>
             <div id="copyright">
