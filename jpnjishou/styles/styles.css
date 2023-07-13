@@ -15,7 +15,7 @@
   
     /* change the values below to your chosen font(s) */
     --heading-font: 'Noto Serif JP', 'serif', 'Garamond', 'Georgia';
-    --paragraph-font: 'Carter One', 'cursive' 'Times New Roman', 'Courier New';
+    --paragraph-font: 'Carter One', 'cursive', 'Times New Roman', 'Courier New';
   
     /* these colors below should be chosen from among your palette colors above */
     --headline-color-on-white: #353b3c;  /* headlines on a white background */ 
@@ -37,7 +37,7 @@
 
 body{
     background-color: #DCABB4;
-
+    font-family: var(--paragraph-font);
 }
 
 nav{
@@ -85,7 +85,7 @@ a{
     border-left: 5px #353b3c solid;
 }
 .mySlides{
-    margin-bottom: -5px;
+    margin-bottom: -7px;
 }
 .slidepictures{
     height: 600px;
@@ -167,8 +167,8 @@ a{
     color: #ffffff;
     box-shadow: 5px 5px #353b3c;
     border-radius: 10px;
-    font-family: var(--heading-font);
     text-shadow: 1px 1px #353b3c;
+    font-size: 60px;
 
 }
 #about{
@@ -190,6 +190,10 @@ a{
     font-size: 20px;
     line-height: 30px;
     word-spacing: 2px;
+    text-shadow: 2px 2px #353b3c;
+}
+#jpndescription p{
+    margin: 5px;
 }
 #pic2{
     grid-column: 2/3;
@@ -225,6 +229,7 @@ footer{
     display: inline-block;
     font-size: 20px;
     letter-spacing: 5px;
+    text-shadow: 1px 1px black;
 }
 
 /* Page2 */
@@ -242,7 +247,7 @@ span{
     margin-bottom: 45px;
     color: white;
     text-shadow: 2px 2px #353b3c;
-    border: 5px #353b3c solid;
+    box-shadow: 4px 4px #353b3c;
     border-radius: 10px;
     font-size: 26px;
     font-family: var(--paragraph-font);
@@ -254,6 +259,7 @@ span{
     width: 435px;
     border: 2px #DCABB4 solid;
     border-radius: 5px;
+    font-size: 60px;
 }
 
 #kanamain{
@@ -306,9 +312,11 @@ span{
     color: #ffffff;
     padding: 15px;
     text-shadow: 2px 2px #353b3c;
+    border-radius: 10px;
     width: 740px;
     height: 67px;
     margin-bottom: 75px;
+    font-size: 30px;
 }
 #kanabottomleft{
     margin-left: 105px;
@@ -324,6 +332,8 @@ span{
     text-shadow: 2px 2px #353b3c;
     width: 740px;
     height: 67px;
+    font-size: 30px;
+    border-radius: 10px;
 }
 #guide{
     grid-column: 1;
@@ -336,7 +346,7 @@ span{
     line-height: 35px;
     word-spacing: 3px;
     text-shadow: 2px 2px #353b3c;
-    height: 480px;
+    height: 590px;
 
 }
 #kanaright{
@@ -354,6 +364,9 @@ span{
     line-height: 22px;
     word-spacing: 5px;
     border-right: 7.5px #353b3c solid;
+}
+#jpnwithtrans span{
+    text-shadow: 1px 1px #353b3c;
 }
 #hellojpn{
     width: 100%;
@@ -379,6 +392,8 @@ span{
     width: 740px;
     height: 67px;
     margin-bottom: 75px;
+    font-size: 30px;
+    border-radius: 10px;
 }
 #kanabottomright{
     margin-right: 105px;
@@ -394,6 +409,8 @@ span{
     text-shadow: 2px 2px #353b3c;
     width: 740px;
     height: 67px;
+    font-size: 30px;
+    border-radius: 10px;
 }
 #wordstuff{
     background-color:#ff595e;
@@ -401,9 +418,84 @@ span{
     padding: 25px;
     border: 5px #353b3c solid;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 30px;
     text-shadow: 2px 2px #353b3c;
-    line-height: 35px;
+    line-height: 40px;
     word-spacing: 3px;
-    height: 480px;
+    height: 590px;
+}
+
+/* Page 3 */
+#margin_div{
+    margin-right: 105px;
+    margin-left: 105px;
+}
+.kanji_title{
+    background-color: #00a5e0;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px #353b3c;
+    padding: 20px;
+    margin: 100px;
+    box-shadow: 5px 5px #353b3c;
+    word-spacing: 3px;
+
+}
+#kanji_des{
+    font-family: var(--paragraph-font);
+    font-size: 25px;
+    background-color:#ff595e;
+    color: white;
+    padding: 30px;
+    line-height: 30px;
+    word-spacing: 2px;
+    border-radius: 10px;
+    border: 5px #353b3c solid;
+    text-shadow: 2px 2px #353b3c;
+}
+#kanji_des p{
+    margin-bottom: 5px;
+}
+#kanjistuff{
+    display: flex;
+    border: 5px #353b3c solid;
+    border-radius: 10px;
+}
+.kanjipic{
+    width: 100%;
+    height: 100%;
+    border: 5px #353b3c solid;
+}
+#kanjipic1{
+    width: 50%;
+}
+#kanjipic2{
+    width: 50%;
+}
+#kanji_content1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px
+}
+#kanjibigboy{
+    font-size: 30px;
+    background-color: #ff595e;
+    padding: 30px;
+    border: 5px #353b3c solid;
+    border-radius: 10px;
+    color:#ffffff;
+    word-spacing: 10px;
+    line-height: 50px;
+    text-shadow: 2px 2px #353b3c;
+    text-align: center;
+    margin-bottom: 150px;
+}
+#kanjibigboy p{
+    margin-top: 20px;
+    border: 2.5px #353b3c solid;
+    border-radius: 5px;
+    background-color: #00a5e0;
+
 }
